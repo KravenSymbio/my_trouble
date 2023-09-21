@@ -4,236 +4,6 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Video Subtitles</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  
-  <style>
-    /* ...Existing CSS styles... */
-
-  .hyper-link {
-  display: grid;
-  margin-left: 10%;
-  margin-top: 2%;
-  align-items: flex-end;
-  margin-bottom: 20px;
-  }
-
-  .waveform{
-    display: grid;
-  margin-left: 10%;
-  margin-top: 5%;
-  align-items: flex-end;
-  margin-bottom: 20px;
-
-  }
-
-  .elements
-  {
-    text-decoration-color: #ff0000;
-  }
-    .crying-button {
-      background-color: #ff0000;
-      color: #fff;
-      }
-
-    .lipS-button {
-      background-color: burlywood;
-      color: #fff;
-    }
-
-    .neckT-button {
-      background-color: darkcyan;
-      color: #fff;
-    }
-
-    .faceT-button {
-      background-color: darksalmon;
-      color: #fff;
-      position: relative;
-      top: 20%;
-
-    }
-
-    .hairS-button {
-      background-color: cadetblue;
-      color: #fff;
-    }
-
-    .Laugh-button {
-      background-color: rgb(4, 239, 247);
-      color: #fff;
-    }
-
-    .HeadS-button {
-      background-color: rgb(231, 133, 5);
-      color: #fff;
-    }
-
-    .HeadT-button {
-      background-color: rgb(182, 231, 5);
-      color: #fff;
-    }
-
-
-
-    
-
-  /* ...Existing CSS styles... */
-
-  .button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .button-container button {
-    margin-bottom: 10px;
-  }
-
-  /* ...Rest of your CSS... */
-</style>
-
-
- 
-
-<style>
-
-.timeline {
-      width: 700px;
-      height: 10px;
-      background-color: #f2f2f2;
-      margin: 0 auto 2%;
-      position: relative;
-      margin-top: -180px;
-    }
-
-
-  .timeline-marker {
-  width: 5px;
-  height: 20px;
-  background-color: #333;
-  cursor: pointer;
-  position: absolute;
-  transform: translateX(-50%);
-}
-
-
-
-    /* Added CSS for image positioning */
-    .image-container {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .image-container img {
-      height: 200px; /* Adjust the height as per your requirement */
-      object-fit: cover;
-    }
-
-    .image-container .inria-image {
-      position: center;
-      top: auto;
-      left: auto;
-      width: auto; /* Adjust the width as per your requirement */
-      height: auto; /* Maintain the aspect ratio */
-    }
-
-    .image-container .dfki-image {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 150px; /* Adjust the width as per your requirement */
-      height: auto; /* Maintain the aspect ratio */
-    }
-
-    .image-container .patient-Clinician-image {
-  position: absolute;
-  bottom: -100px; /* Adjust the bottom position as needed to move it to the bottom */
-  right: 10px; /* Adjust the right position as needed */
-  width: 150px; /* Adjust the width as per your requirement */
-  height: auto; /* Maintain the aspect ratio */
-}
-
-.image-container .med-logo-image {
-  position: absolute;
-  bottom: -600px; /* Adjust the bottom position as needed */
-  left: 10px; /* Adjust the left position as needed */
-  width: 150px; /* Adjust the width as per your requirement */
-  height: auto; /* Maintain the aspect ratio */
-}
-
-    /* Added CSS for custom colors */
-    .arm-rub-row {
-      background-color: #ffd700; /* Use the desired color for Arm Rub */
-    }
-
-    .crying-row {
-      background-color: #ff0000; /* Use the desired color for Crying */
-    }
-
-    .Eye-Rub-row {
-      background-color: aqua;
-    }
-
-    .Neck-Touch-row {
-      background-color: darkcyan;
-    }
-
-    .Face-Touch-row{
-      background-color: darksalmon;
-    }
-
-    .Lips-Scratch-row{
-      background-color: burlywood;
-    }
-
-    .Hair-Scratch-row{
-      background-color: cadetblue;
-    }
-
-video{
-  
- width: 720px;
- height: 480px;
- top: 30px;
-  display: block;
-  margin: 0 auto;
-}
-
-    .crying-2-row {
-      background-color: #00ff00; /* Use the desired color for Crying 2 */
-    }
-
-    /* Added CSS for the CSV button */
-    .csv-button {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      padding: 10px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    .center{
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      height: 60%;
-      margin-top: 5%;
-    } 
-    
-  
-  
-</style>
-
-</style>
-
-
-
-
-
-
-  </style>
 </head>
 <body>
   <div class="image-container">
@@ -295,7 +65,7 @@ video{
   </table>
 </div>
 <div class="video">
-  <video id="frenchvideo" src="\demo.mp4" class="video" width="480px" height="480px" controls>
+  <video id="frenchvideo" src="003BM-0.mp4" class="video" width="480px" height="480px" controls>
     <track default src="\Clinician_captions.vtt" kind="subtitles" srclang="fr" label="French">
   </video>
 </div>
@@ -304,118 +74,32 @@ video{
 
 
 <!--dictionry {"id": [1,2,3,4], "behavior": [...],} -->
+<div id="buttonContainers">
 
-<div id="buttonContainer" class="button-container">
-  <!--<button class="btn faceT-button" style="width: 3%;" onclick="performAction('FaceTouch',78,79)"></button> -->
-  <!--<button class="btn HeadT-button" style="width: 8%; margin-left: -5%; margin-top: 3%;" onclick="performAction('Head Tilt', 97, 105)"></button> -->
 
-  <!-- HeadS-button -->
-  <!--<button class="btn HeadS-button" onclick="performAction('Head Scratch', 329, 334)"></button>-->
-
-  <!--<button class="btn HeadS2-button" onclick="performAction('Head Scratch', 329, 334)"></button>-->
-
-  <!-- Crying-button -->
-  <!--<button class="btn crying-button" data-name="Crying" onclick="performAction('Crying', 512, 540)"></button>-->
-
-  <!-- neckT-button -->
-  <!--<button class="btn neckT-button" data-name="NeckTouch" onclick="performAction('NeckTouch', 518, 522)"></button>-->
-
-  <!--<button class="btn neckT2-button" onclick="performAction('NeckTouch', 290, 293)"></button>-->
-
-  <!-- lipS-button -->
-  <!--<button class="btn lipS-button" data-name="LipsScratch" onclick="performAction('Lips Scratch',641,643)"></button>-->
-
-  <!-- hairS-button -->
-  <!--<button class="btn hairS-button" onclick="performAction('HairScratch',755,756)"></button>-->
-
-  <!-- Laugh-button -->
-  <!--<button class="btn Laugh-button" onclick="performAction('Laugh', 758, 770)"></button>-->
-
-  <!--<button class="btn Laugh2-button" onclick="performAction('Laugh', 342, 350)"></button>-->
 </div>
 
-
-
-<style>
-  .btn {
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    height: 40px; /* Adjust the height as needed */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px; /* Adjust the font size as needed */
-  }
-
-  .HeadS-button {
-    background-color: rgb(231, 133, 5);
-    width: 100px;
-    margin-left: 120px;
-    margin-top: 10px;
-  }
-
-  .HeadS2-button {
-    background-color: rgb(231, 133, 5);
-    width: 100px;
-    margin-left: 500px;
-    margin-top: -20px;
-  }
-
- 
-  .crying-button {
-    background-color: #ff0000;
-    width: 20%;
-    margin-left: 10%;
-    margin-top: 10px; /* Adjust the vertical spacing as needed */
-  }
-
-  .neckT-button {
-    background-color: darkcyan;
-    width: 6%;
-    margin-left: 10%; /* Adjust the margin-left to position it next to the orange button */
-    margin-top: 10px;
-  }
-
-
-  .neckT2-button {
-    background-color: darkcyan;
-    width: 6%;
-    margin-left: 40%; /* Adjust the margin-left to position it next to the orange button */
-    margin-top: 10px;
-  }
-
-  .lipS-button {
-    background-color: burlywood;
-    width: 4%;
-    margin-left: 10%;
-    margin-top: 10px;
-  }
-
-  .hairS-button {
-    background-color: cadetblue;
-    width: 4%;
-    margin-left: 10%;
-    margin-top: 10px;
-  }
-
-  .Laugh-button {
-    background-color: rgb(4, 239, 247);
-    width: 10%;
-    margin-left: 10%;
-    margin-top: 10px;
-  }
-
-  .Laugh2-button {
-    background-color: rgb(4, 239, 247);
-    width: 10%;
-    margin-left: 30%;
-    margin-top: 10px;
-  }
-
-
-
-</style>
+<!-- <div id="cryingButtons" class="button-container">
+  </div>
+<div id="headScratchButtons" class="button-container">
+  </div>
+  <div id="headTiltButtons" class="button-container">
+  </div>
+  <div id="armRubButtons" class="button-container">
+  </div>
+  <div id="neckTouchButtons" class="button-container">
+  </div>
+  <div id="eyeRubButtons" class="button-container">
+  </div>
+<div id="lipScratchButtons" class="button-container">
+  </div>
+<div id="hairScratchButtons" class="button-container">
+  </div>
+  <div id="laughButtons" class="button-container">
+  </div>
+  <div id="faceTouchButtons" class="button-container">
+  </div> -->
+  
 
     <!-- Add more buttons for other features -->
   </div> 
@@ -424,20 +108,19 @@ video{
 
 
 
- <div class="hyper-link"> 
+<div class="hyper-link"> 
 
-     <a href="#btn neckT-button"  style="color: darksalmon;">Face Touch</a> 
-     <a href="#btn neckT-button"  style="color: #ff0000;">Crying</a>  
-     <a href="#btn neckT-button"  style="color: rgb(4, 239, 247);">Laugh</a> 
-     <a href="#btn neckT-button"  style="color: rgb(231, 133, 5);">Head Scratch</a> 
-     <a href="#btn neckT-button"  style="color: rgb(182, 231, 5);">Head Tilt</a> 
-     <a href="#btn neckT-button"  style="color: burlywood;">Lip Scratch</a> 
-     <a href="#btn neckT-button"  style="color: darkcyan;">Neck Touch</a> 
+     <a href="#"  style="color: rgb(255, 255, 255);">F</a> 
+     <a href="#"  style="color: rgb(255, 255, 255);">Crying</a>  
+     <a href="#"  style="color:rgb(255, 255, 255);">Laugh</a> 
+     <a href="#"  style="color:rgb(255, 255, 255);">Head Scratch</a> 
+     <a href="#"  style="color:rgb(255, 255, 255);">Head Tilt</a> 
+     <a href="#"  style="color:rgb(255, 255, 255);">Lip Scratch</a> 
+     <a href="#"  style="color:rgb(255, 255, 255)">Neck Touch</a> 
     
-     <a href="#btn neckT-button"  style="color: cadetblue;">Hair Scratch</a> 
+     <a href="#"  style="color:rgb(255, 255, 255);">Hair Scratch</a> 
 
 
-   </div> 
 </div>
 <div class="timeline" id="videoTimeline">
   <div class="timeline-marker">
@@ -475,21 +158,6 @@ features.forEach(feature => {
   const timeline = document.getElementById('videoTimeline');
   const timelineMarker = timeline.querySelector('.timeline-marker');
   const tooltipText = timeline.querySelector('.tooltip-text');
-
-  // Define the start and end times (in seconds) for each feature
-  const features = [
-    { name: 'Trim', startTime: 10, endTime: 20 },
-    { name: 'Crying', startTime: 512, endTime: 540 },
-    { name: 'Laugh', startTime: 758, endTime: 770 },
-    { name: 'Head Scratch', startTime: 329, endTime: 334 },
-    { name: 'Head Tilt', startTime: 97, endTime: 105 },
-    { name: 'FaceTouch', startTime: 78, endTime: 79 },
-    { name: 'Arm Rub', startTime: 56, endTime: 96 },
-    {name:  'NeckTouch', startTime: 518, endTime: 522},
-    {name: 'EyeRub', startTime: 626, endTime: 629},
-    {name: 'LipsScratch', startTime: 641, endTime: 643},
-    {name: 'HairScratch', startTime: 755, endTime: 756},
-  ];
 
   // Update the position of the timeline marker based on the video's current time
   videoPlayer.addEventListener('timeupdate', function () {
@@ -532,6 +200,11 @@ features.forEach(feature => {
   // Trim the video
   function trimVideo(startTime, endTime) {
     videoPlayer.currentTime = startTime;
+    videoPlayer.play();
+  }
+
+  function jumpToPosition(position) {
+    videoPlayer.currentTime = position;
     videoPlayer.play();
   }
 
@@ -666,8 +339,7 @@ patientCheckbox.addEventListener('change', function() {
   }
 });
 
-  // Handle CSV file upload
-  function handleCSVFile() {
+function handleCSVFile() {
     const input = document.createElement('input');
     input.type = 'file';
     input.accept = '.csv';
@@ -687,9 +359,11 @@ patientCheckbox.addEventListener('change', function() {
         console.log(contents)
         const rows = contents.split('\n');
         rows.shift(); // Remove the header row
-
         rows.forEach(row => {
-          const [name, startTime, endTime] = row.split(',');
+          const splitted = row.split(',');
+          const startTime = splitted[1];
+          const endTime = splitted[2];
+          const name = splitted[3]; 
           updateButton(name, Number(startTime), Number(endTime));
         });
       };
@@ -699,65 +373,294 @@ patientCheckbox.addEventListener('change', function() {
 
     }
 
-  function getRandomColor() {
-  const letters = '0123456789ABCDEF';
-  let color = '#';
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
+
+colorMap = {};
+lastEndTime = {};
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.round(Math.random() * 15)];
+    }
+    console.log(color);
+    return color;
 }
 
-        
-    // Function to update the existing button with CSV data
-    function updateButton(name, startTime, endTime) {
-        // add this for each button with style
-       let btn = document.createElement("button");
-       btn.innerHTML = name + startTime;
-       btn.dataset.name = name; // Store the name as a data attribute
-      btn.dataset.startTime = startTime;
-      btn.dataset.endTime = endTime;
 
-      // Set background color using the random color
-      btn.style.backgroundColor = getRandomColor();
+function getOrCreateButtonContainer (name, displayName) {
+  if (document.getElementById(name) == null) {
+    colorMap[name] = getRandomColor();
+    lastEndTime[name] = 0.0;
+    console.log("creating element for " + name);
+    let buttonContainer = document.createElement('div');
+    let buttonContainerWrapper = document.createElement('div');
+    let text = document.createElement('div');
+    text.textContent = displayName;
+    text.style.marginLeft = "50px";
+    text.style.color = colorMap[name];
+    buttonContainerWrapper.appendChild(text);
+    buttonContainer.id = name;
+    buttonContainer.classList.add('button-container');
+    buttonContainerWrapper.appendChild(buttonContainer);
+    document.getElementById("buttonContainers").appendChild(buttonContainerWrapper);
+    
+    
+  }
+  return document.getElementById(name);
+}
+
+
+
+function updateButton(name, startTime, endTime) {
+  if (name == null || name.length == 0) {
+    return;
+  }
+  let duration = videoPlayer.duration;
+  // for testing only
+  //duration = 6000;
+  var safeName = name.replace(/[^A-Z0-9]/ig, "_");
+  console.log(name + " goes to " + safeName);
+  let buttonContainer = getOrCreateButtonContainer(safeName, name);
+  let color = colorMap[safeName];
+  let btn = document.createElement("button");
+  width = ((endTime - startTime)/duration * 100);
+  btn.style.width = width + "%";
+  btn.style.minWidth = "1px";
+  btn.id = safeName + startTime;
+  btn.style.height = "30px";
+  btn.style.color = "#fff";
+  btn.style.backgroundColor = colorMap[safeName];
+  marginLeft = ((startTime - lastEndTime[safeName] )/ duration) * 100
+  btn.onclick = function() {jumpToPosition(startTime)};
+  btn.style.marginLeft = marginLeft + "%";
+  buttonContainer.appendChild(btn);
+  
+  lastEndTime[safeName] = endTime;
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Function to update the existing button with CSV data
+    // function updateButton(name, startTime, endTime, lastEndTimes) {
+    //   //console.log(name + ' ' + startTime + ' ' + endTime + '');
+    //   console.log('lastEndTimes: ' + lastEndTimes);
+    //   let btn = document.createElement("button");
+    //   width = ((endTime - startTime)/ videoPlayer.duration) * 100;
+    //   btn.style.width = width + "%";
+    //   btn.id = name + startTime;
+
+    //   btn.onclick = function() {jumpToPosition(startTime)};
+    //   switch (name) {
+    //     case 'Crying':
+    //       btn.classList.add("crying-button");
+    //       marginLeft = ((startTime - lastEndTimes[0] )/ videoPlayer.duration) * 100;
+    //       btn.style.marginLeft = marginLeft + "%";
+    //       lastEndTimes[0] = endTime;
+    //       const buttonContainer = document.getElementById("cryingButtons");
+    //       buttonContainer.appendChild(btn);
+    //       return lastEndTimes;
+    //     break;
+        
+    //     case 'HeadScratch':
+    //       btn.classList.add("headScratch-button");
+    //       marginLeft = ((startTime - lastEndTimes[1] )/ videoPlayer.duration) * 100;
+    //       btn.style.marginLeft = marginLeft + "%";
+    //       lastEndTimes[1] = endTime;
+    //       const headSButtonContainer = document.getElementById("headScratchButtons");
+    //       headSButtonContainer.appendChild(btn);
+    //       return lastEndTimes;
+    //     break;
+        
+    //     case 'HeadTilt':
+    //       btn.classList.add("headTilt-button");
+    //       marginLeft = ((startTime - lastEndTimes[2] )/ videoPlayer.duration) * 100;
+    //       btn.style.marginLeft = marginLeft + "%";
+    //       lastEndTimes[2] = endTime;
+    //       const headTButtonContainer = document.getElementById("headTiltButtons");
+    //       headTButtonContainer.appendChild(btn);
+    //       return lastEndTimes;
+    //     break;
+        
+    //     case 'ArmRub':
+    //       btn.classList.add("armRub-button");
+    //       marginLeft = ((startTime - lastEndTimes[3] )/ videoPlayer.duration) * 100;
+    //       btn.style.marginLeft = marginLeft + "%";
+    //       lastEndTimes[3] = endTime;
+    //       const armRButtonContainer = document.getElementById("armRubButtons");
+    //       armRButtonContainer.appendChild(btn);
+    //       return lastEndTimes;
+    //     break;
+        
+    //     case 'NeckTouch':
+    //       btn.classList.add("neckTouch-button");
+    //       marginLeft = ((startTime - lastEndTimes[4] )/ videoPlayer.duration) * 100;
+    //       btn.style.marginLeft = marginLeft + "%";
+    //       lastEndTimes[4] = endTime;
+    //       const neckTButtonContainer = document.getElementById("neckTouchButtons");
+    //       neckTButtonContainer.appendChild(btn);
+    //       return lastEndTimes;
+    //     break;
+        
+    //     case 'EyeRub':
+    //       btn.classList.add("eyeRub-button");
+    //       marginLeft = ((startTime - lastEndTimes[5] )/ videoPlayer.duration) * 100;
+    //       btn.style.marginLeft = marginLeft + "%";
+    //       lastEndTimes[5] = endTime;
+    //       const eyeRButtonContainer = document.getElementById("eyeRubButtons");
+    //       eyeRButtonContainer.appendChild(btn);
+    //       return lastEndTimes;
+    //     break;
+        
+    //     case 'LipScratch':
+    //       btn.classList.add("lipScratch-button");
+    //       marginLeft = ((startTime - lastEndTimes[6] )/ videoPlayer.duration) * 100;
+    //       btn.style.marginLeft = marginLeft + "%";
+    //       lastEndTimes[6] = endTime;
+    //       const lipsSButtonContainer = document.getElementById("lipScratchButtons");
+    //       lipsSButtonContainer.appendChild(btn);
+    //       return lastEndTimes;
+  
+    //     break;
+    //     case 'HairScratch':
+    //       btn.classList.add("hairScratch-button");
+    //       marginLeft = ((startTime - lastEndTimes[7] )/ videoPlayer.duration) * 100;
+    //       btn.style.marginLeft = marginLeft + "%";
+    //       lastEndTimes[7] = endTime;
+    //       const hairSButtonContainer = document.getElementById("hairScratchButtons");
+    //       hairSButtonContainer.appendChild(btn);
+    //       return lastEndTimes;
+    //     break;
+    //     case 'FaceTouch':
+    //       btn.classList.add("faceTouch-button");
+    //       marginLeft = ((startTime - lastEndTimes[8] )/ videoPlayer.duration) * 100;
+    //       btn.style.marginLeft = marginLeft + "%";
+    //       lastEndTimes[8] = endTime;
+    //       const faceTButtonContainer = document.getElementById("faceTouchButtons");
+    //       faceTButtonContainer.appendChild(btn);
+    //       return lastEndTimes;
+    //     break;
+    //     case 'Laugh':
+    //       btn.classList.add("laugh-button");
+    //       marginLeft = ((startTime - lastEndTimes[9] )/ videoPlayer.duration) * 100;
+    //       btn.style.marginLeft = marginLeft + "%";
+    //       lastEndTimes[9] = endTime;
+    //       const laughButtonContainer = document.getElementById("laughButtons");
+    //       laughButtonContainer.appendChild(btn);
+    //       return lastEndTimes;
+    //     break;
+    //     console.log('lastEndTimes: ' + lastEndTimes);
+    //     return lastEndTimes;
+    //   }
+
+      
+    // }
+
+   
+    //     // add this for each button with style
+    //    let btn = document.createElement("button");
+    //    btn.innerHTML = name + startTime;
+    //    btn.dataset.name = name; // Store the name as a data attribute
+    //   btn.dataset.startTime = startTime;
+    //   btn.dataset.endTime = endTime;
+
+    //   // Set background color using the random color
+    //   btn.style.backgroundColor = getRandomColor();
 
       
        
-      const buttonContainer = document.getElementById("buttonContainer");
+    //   const buttonContainer = document.getElementById("buttonContainer");
       
       
-      // Calculate the horizontal position based on the start time and timeline width
-      const timeline = document.querySelector(".timeline");
-      const timelineWidth = timeline.offsetWidth;
-      const position = (startTime / videoPlayer.duration) * timelineWidth;
-      btn.style.left = `${position}px`;
+    //   // Calculate the horizontal position based on the start time and timeline width
+    //   const timeline = document.querySelector(".timeline");
+    //   const timelineWidth = timeline.offsetWidth;
+    //   const position = (startTime / videoPlayer.duration) * timelineWidth;
+    //   btn.style.left = `${position}px`;
 
-      // Calculate the vertical position based on the number of buttons
-      const buttonHeight = 30; // Adjust this value as needed
-      const buttonCount = buttonContainer.children.length;
-      btn.style.top = `${buttonHeight * buttonCount}px`;
+    //   // Calculate the vertical position based on the number of buttons
+    //   const buttonHeight = 30; // Adjust this value as needed
+    //   const buttonCount = buttonContainer.children.length;
+    //   btn.style.top = `${buttonHeight * buttonCount}px`;
 
-    buttonContainer.appendChild(btn);
+    // buttonContainer.appendChild(btn);
 
     
 
        
        
-       // Add a click event listener to the button
-      btn.addEventListener("click", function () {
-      // Retrieve data attributes for the clicked button
-      const clickedName = btn.dataset.name;
-      const clickedStartTime = Number(btn.dataset.startTime);
-      const clickedEndTime = Number(btn.dataset.endTime);
+    //    // Add a click event listener to the button
+    //   btn.addEventListener("click", function () {
+    //   // Retrieve data attributes for the clicked button
+    //   const clickedName = btn.dataset.name;
+    //   const clickedStartTime = Number(btn.dataset.startTime);
+    //   const clickedEndTime = Number(btn.dataset.endTime);
 
 
 
-      // Call the performAction function with the button's data
-      performAction(clickedName, clickedStartTime, clickedEndTime);
-    });
+    //   // Call the performAction function with the button's data
+    //   performAction(clickedName, clickedStartTime, clickedEndTime);
+    // });
+    //}
       
-      
-  }
 
   
 
